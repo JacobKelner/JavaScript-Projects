@@ -19,5 +19,5 @@ document.write(Mom);//This prints variable Mom(Jada)
 
 document.write(" 3+3");
 
-var str=new String("Demo text");
+var str=new String(" Demo text");
 document.write(str.fontcolor("blue"));
