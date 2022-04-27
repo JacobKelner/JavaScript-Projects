@@ -63,8 +63,8 @@ function my_Differentvalue() {
 
 function my_Randomfunction() {//currently not working
     B=82;
-    B="82";
-    document.getElementById("differentfalse").innerHTML = B===B;
+    T="82";
+    document.getElementById("differentfalse").innerHTML = T===B;
 }
 
 function my_Andfunction() {
