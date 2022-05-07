@@ -63,7 +63,7 @@ function Handle_Operator(Next_Operator) {
         result = Number(result).toFixed(9)
         //this will remove t=any trailing 0s
         result = (result * 1).toString()
-        Calculator_Display_Value = parseFloat(result);
+        Calculator.Display_Value = parseFloat(result);
         Calculator.First_Operand = parseFloat(result);
 
     }
@@ -78,7 +78,7 @@ function Handle_Operator(Next_Operator) {
         '*': (First_Operand, Second_Operand) => First_Operand * Second_Operand,
         '+': (First_Operand, Second_Operand) => First_Operand + Second_Operand,
         '-': (First_Operand, Second_Operand) => First_Operand - Second_Operand,
-        '=': (First_Operand, Second_Operand) => Second_Operand
+        '=': (First_Operand, Second_Operand) => Second_Operand 
     };
 
     function Calculator_Reset() {
