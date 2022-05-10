@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.gogleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    
+    </head>
+    <body>
+
+    <script>
+        $(document).ready(function() {
+            $("html").append(
+                "<body>\
+                    <div id='container'>\
+                        <div id='inner'>\
+                            <h1>Basic jQuery</h1>\
+                            <p id='1'>Paragraph 1</p>\
+                            <p id='2'>Paragraph 2</p>\
+                            <p id='3'>Paragraph 3</p>\
+                            <p>Paragraph 4</p>\
+                        </div>\
+                    </div>\
+                </body>"
+
+
+            );
+            
+            $( "p" ).click(function() {
+            console.log( "You clicked a paragraph!" );//Sentence appears in console log after click on a paragrah element sentence.
+            });
+    
+
+            // Slowly hide all paragraphs
+            $( "p" ).hide( 500 );//makes all paragraph elements disspear in .5 seconds
+ 
+            
+            $( "p" ).show(950);//makes all paragraph elements appear in .95 seconds
+
+
+            $("#2").css({"color":"red"});//targets id '2' to be colored 'red' via css
+            $("#3").click(function() {//after clicking the 'p' element with id '3', the h1 element disappears
+                $('h1').hide();
+            });
+        });
+    </script>
+</html>
